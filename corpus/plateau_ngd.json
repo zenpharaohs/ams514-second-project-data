@@ -1,0 +1,179 @@
+{
+  "name": "plateau_ngd",
+  "pools": 512,
+  "arms": 8,
+  "horizon": 2048,
+  "chunk_steps": 4,
+  "seed": 20261118,
+  "objective": "E[(f(X)-a*g(b*X))^2]",
+  "moment_law": "normal01",
+  "f": [
+    "0",
+    "-3",
+    "0",
+    "-3",
+    "0",
+    "-3",
+    "0",
+    "-3",
+    "0",
+    "-3"
+  ],
+  "g": [
+    "-3",
+    "-1",
+    "-3",
+    "7",
+    "-3",
+    "-13",
+    "-3",
+    "7",
+    "-3",
+    "-1"
+  ],
+  "alpha": [
+    "9",
+    "0",
+    "19",
+    "0",
+    "39",
+    "0",
+    "1665",
+    "0",
+    "-15855",
+    "0",
+    "288225",
+    "0",
+    "-1756755",
+    "0",
+    "12567555",
+    "0",
+    "-10135125",
+    "0",
+    "34459425"
+  ],
+  "beta": [
+    "0",
+    "3207",
+    "0",
+    "-240723",
+    "0",
+    "5717205",
+    "0",
+    "-45645705",
+    "0",
+    "109898775"
+  ],
+  "C": 350690913.0,
+  "optimum": 199262.41382147264,
+  "target_loss": 3704178.919683258,
+  "initialization": {
+    "kind": "iid uniform rectangle",
+    "bounds": [
+      [
+        -50.0,
+        -0.6
+      ],
+      [
+        50.0,
+        0.6
+      ]
+    ]
+  },
+  "optimizer": "population damped Fisher/Gauss-Newton with Armijo backtracking",
+  "maximum_step": 1.0,
+  "damping": 0.001,
+  "armijo": 0.0001,
+  "max_halvings": 48,
+  "termination": {
+    "0": "recording cap; no endpoint assertion",
+    "1": "line-search precision limit; absorbing last finite state",
+    "2": "nonfinite direction; absorbing last finite state"
+  },
+  "status_counts": {
+    "0": 3571,
+    "1": 525,
+    "2": 0
+  },
+  "known_critical_points": [
+    [
+      -9.743743788267483e-47,
+      -0.47380926627671627
+    ],
+    [
+      33.99016681054236,
+      -0.421573142655166
+    ],
+    [
+      -1.742938517569611e-46,
+      -0.3554591812091738
+    ],
+    [
+      -42.605551959939724,
+      -0.30157267793877607
+    ],
+    [
+      1.622545011837738e-48,
+      -0.1886598654884367
+    ],
+    [
+      0.4116281355500058,
+      -0.17955256575253517
+    ],
+    [
+      6.168650346744026e-48,
+      -0.17001226276777115
+    ],
+    [
+      -16.683000241815673,
+      -0.07452089682369355
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      16.683000241815673,
+      0.07452089682369355
+    ],
+    [
+      -6.168650346744026e-48,
+      0.17001226276777115
+    ],
+    [
+      -0.4116281355500058,
+      0.17955256575253517
+    ],
+    [
+      -1.622545011837738e-48,
+      0.1886598654884367
+    ],
+    [
+      42.605551959939724,
+      0.30157267793877607
+    ],
+    [
+      1.742938517569611e-46,
+      0.3554591812091738
+    ],
+    [
+      -33.99016681054236,
+      0.421573142655166
+    ],
+    [
+      9.743743788267483e-47,
+      0.47380926627671627
+    ]
+  ],
+  "normalization_scale": 350491650.58617854,
+  "notes": [
+    "Population-moment gradients; no minibatch randomness.",
+    "Optimizer parameters fixed before final independent-pool generation.",
+    "Damped NGD is a declared variant, not the exact-rational spong demo implementation.",
+    "Armijo uses Horner divided differences for loss changes, avoiding subtraction of nearly equal plateau losses.",
+    "Stopped tapes retain loss; subsequent pulls spend allocation slots and loss-evaluation cost, but no gradient work.",
+    "Geometric snapshots are instructor diagnostics and never passed to allocators."
+  ],
+  "generation_seconds": 12.052920959074982,
+  "spong_commit": "dced323bf905485e478c7894f5402d6347fea35d"
+}

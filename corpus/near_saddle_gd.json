@@ -1,0 +1,90 @@
+{
+  "name": "near_saddle_gd",
+  "pools": 512,
+  "arms": 8,
+  "horizon": 2048,
+  "chunk_steps": 4,
+  "seed": 20261118,
+  "objective": "E[(f(X)-a*g(b*X))^2]",
+  "moment_law": "normal01",
+  "f": [
+    "1",
+    "1",
+    "1"
+  ],
+  "g": [
+    "1",
+    "1",
+    "1"
+  ],
+  "alpha": [
+    "1",
+    "0",
+    "3",
+    "0",
+    "3"
+  ],
+  "beta": [
+    "2",
+    "1",
+    "4"
+  ],
+  "C": 7.0,
+  "optimum": 0.0,
+  "target_loss": 0.0001,
+  "initialization": {
+    "kind": "iid near-saddle unstable-eigenvector offsets",
+    "center": [
+      1.374934381845989,
+      -0.44249333402444213
+    ],
+    "direction": [
+      -0.6810925095048312,
+      -0.7321973733197981
+    ],
+    "log10_radius_uniform": [
+      -11,
+      -2
+    ],
+    "sign_probabilities": [
+      0.5,
+      0.5
+    ]
+  },
+  "optimizer": "population GD with Armijo backtracking",
+  "maximum_step": 0.05,
+  "damping": null,
+  "armijo": 0.0001,
+  "max_halvings": 48,
+  "termination": {
+    "0": "recording cap; no endpoint assertion",
+    "1": "line-search precision limit; absorbing last finite state",
+    "2": "nonfinite direction; absorbing last finite state"
+  },
+  "status_counts": {
+    "0": 2056,
+    "1": 2040,
+    "2": 0
+  },
+  "known_critical_points": [
+    [
+      1.374934381845989,
+      -0.44249333402444213
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ],
+  "normalization_scale": 7.0,
+  "notes": [
+    "Population-moment gradients; no minibatch randomness.",
+    "Optimizer parameters fixed before final independent-pool generation.",
+    "Damped NGD is a declared variant, not the exact-rational spong demo implementation.",
+    "Armijo uses Horner divided differences for loss changes, avoiding subtraction of nearly equal plateau losses.",
+    "Stopped tapes retain loss; subsequent pulls spend allocation slots and loss-evaluation cost, but no gradient work.",
+    "Geometric snapshots are instructor diagnostics and never passed to allocators."
+  ],
+  "generation_seconds": 5.677435333956964,
+  "spong_commit": "dced323bf905485e478c7894f5402d6347fea35d"
+}

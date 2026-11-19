@@ -1,0 +1,12 @@
+{
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.0",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "purpose": "Local reproduction record; timing is descriptive, not a controlled benchmark."
+}

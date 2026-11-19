@@ -1,0 +1,9 @@
+{
+  "protocol": {
+    "future_poisoning_all_policies": true,
+    "prefix_and_budget_accounting": true,
+    "read_only_observations": true,
+    "exhaustion_raises": true,
+    "cb_zero_endpoint_ranks_first": true
+  }
+}

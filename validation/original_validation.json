@@ -1,0 +1,55 @@
+{
+  "protocol": {
+    "future_poisoning_all_policies": true,
+    "prefix_and_budget_accounting": true,
+    "read_only_observations": true,
+    "exhaustion_raises": true,
+    "cb_zero_endpoint_ranks_first": true
+  },
+  "corpus": {
+    "near_saddle_gd": {
+      "shape": [
+        512,
+        8,
+        2049
+      ],
+      "max_loss_error_over_C": 3.1720657846433045e-16,
+      "max_difference_error_scaled": 5.7571770633690726e-21,
+      "max_upward_roundoff": 5.329070518200751e-15,
+      "high_precision_samples": 100
+    },
+    "plateau_gd": {
+      "shape": [
+        512,
+        8,
+        2049
+      ],
+      "max_loss_error_over_C": 2.5494520630218306e-16,
+      "max_difference_error_scaled": 2.7515493474330334e-13,
+      "max_upward_roundoff": 0.0,
+      "high_precision_samples": 100
+    },
+    "plateau_ngd": {
+      "shape": [
+        512,
+        8,
+        2049
+      ],
+      "max_loss_error_over_C": 1.0311504519220784e-15,
+      "max_difference_error_scaled": 2.23538432230809e-15,
+      "max_upward_roundoff": 5.960464477539063e-08,
+      "high_precision_samples": 100
+    },
+    "quadratic_gd": {
+      "shape": [
+        512,
+        8,
+        2049
+      ],
+      "max_loss_error_over_C": 3.1720657846433045e-16,
+      "max_difference_error_scaled": 6.432156443212343e-21,
+      "max_upward_roundoff": 4.440892098500626e-15,
+      "high_precision_samples": 100
+    }
+  }
+}

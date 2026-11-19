@@ -1,0 +1,293 @@
+{
+  "dataset": "AMS514 second-project indexed descent losses",
+  "generated": "2026-11-18",
+  "published": "2026-11-19",
+  "generation_seed": 20261118,
+  "spong_commit": "dced323bf905485e478c7894f5402d6347fea35d",
+  "files": {
+    "corpus/near_saddle_gd.json": {
+      "bytes": 2027,
+      "sha256": "263ea7ba313e0744cf8c71e0fc163dc61e7cf80b4761a1cce03d5e8b10217003"
+    },
+    "corpus/near_saddle_gd.npz": {
+      "bytes": 41054683,
+      "sha256": "4961a744383afe67727aabc0841d2f1b87697ec2b88c2179a78ffd89ff6ed014",
+      "arrays": {
+        "loss": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "float64"
+        },
+        "initial_parameters": {
+          "shape": [
+            512,
+            8,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "objective_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "gradient_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "terminal_status": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "uint8"
+        },
+        "stop_at": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "int32"
+        },
+        "geometry": {
+          "shape": [
+            512,
+            8,
+            129,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "geometry_pulls": {
+          "shape": [
+            129
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    "corpus/plateau_gd.json": {
+      "bytes": 3298,
+      "sha256": "a147af7dcf4f2a6f59f1307dc4d38fe1942472221a026b4f50a28517a8b54d39"
+    },
+    "corpus/plateau_gd.npz": {
+      "bytes": 63271126,
+      "sha256": "cd09aec8f94d9737dc2489e8d54439b8d75352ece23efbf7700bd8a1dd4719e7",
+      "arrays": {
+        "loss": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "float64"
+        },
+        "initial_parameters": {
+          "shape": [
+            512,
+            8,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "objective_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "gradient_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "terminal_status": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "uint8"
+        },
+        "stop_at": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "int32"
+        },
+        "geometry": {
+          "shape": [
+            512,
+            8,
+            129,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "geometry_pulls": {
+          "shape": [
+            129
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    "corpus/plateau_ngd.json": {
+      "bytes": 3326,
+      "sha256": "c59f9dd76d5901f15123e6ffba19bd81938f89429d3db03b4998801aa7a4b767"
+    },
+    "corpus/plateau_ngd.npz": {
+      "bytes": 48937146,
+      "sha256": "36a6b83b6c81f8f963027b1bbc9d6f7b4121314fd6f80f7348197a98cd5526da",
+      "arrays": {
+        "loss": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "float64"
+        },
+        "initial_parameters": {
+          "shape": [
+            512,
+            8,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "objective_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "gradient_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "terminal_status": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "uint8"
+        },
+        "stop_at": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "int32"
+        },
+        "geometry": {
+          "shape": [
+            512,
+            8,
+            129,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "geometry_pulls": {
+          "shape": [
+            129
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    "corpus/quadratic_gd.json": {
+      "bytes": 1842,
+      "sha256": "82727976668fbca07fdead92c883824a97757a23372da48c2d1d0cf62571981b"
+    },
+    "corpus/quadratic_gd.npz": {
+      "bytes": 28161658,
+      "sha256": "b4bc75eb07145023abf3596c7c80469e20d1fdd36d02ec7ec947bdec13ddf42d",
+      "arrays": {
+        "loss": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "float64"
+        },
+        "initial_parameters": {
+          "shape": [
+            512,
+            8,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "objective_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "gradient_evaluations": {
+          "shape": [
+            512,
+            8,
+            2049
+          ],
+          "dtype": "uint32"
+        },
+        "terminal_status": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "uint8"
+        },
+        "stop_at": {
+          "shape": [
+            512,
+            8
+          ],
+          "dtype": "int32"
+        },
+        "geometry": {
+          "shape": [
+            512,
+            8,
+            129,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "geometry_pulls": {
+          "shape": [
+            129
+          ],
+          "dtype": "int64"
+        }
+      }
+    }
+  }
+}
