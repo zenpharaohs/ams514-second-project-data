@@ -42,23 +42,23 @@ The matcher adjusts positive concentrations within the same conjugate family to 
 
 Let `K` be the arm count, `T` the total pull budget including one warm-up pull per arm, and `H=2048` the recorded local horizon. Let `V_t` be the best checkpoint actually revealed by total pull `t`. After warm-up, the same-tape single-arm oracle is
 
-\[
+$$
 O_t=\min_i\min_{0\le n\le t-K+1}L_i(n),\qquad t\ge K.
-\]
+$$
 
 This benchmark chooses an arm in hindsight after giving every arm its warm-up pull. It is computed after playback. An allocation-quality measure is the cumulative shortfall
 
-\[
+$$
 A_T=\frac1S\sum_{t=K}^{T}(V_t-O_t),
-\]
+$$
 
 where the JSON sidecar supplies the fixed display scale `S=normalization_scale`. The oracle and the sum's start time change with `K`; keep that in mind when interpreting comparisons across arm counts.
 
 A different statistic is finite-tape endpoint pseudo-regret:
 
-\[
+$$
 R_T^{(H)}=\frac1S\sum_i\big[L_i(H)-\min_j L_j(H)\big]N_i(T).
-\]
+$$
 
 This measures allocation to inferior recorded endpoints. It can disagree with achieved training quality, and it is not classical stationary-bandit regret or regret against certified limiting losses. The project is an experimental investigation; a stationary-bandit theorem should not be assumed to cover these descent tapes.
 

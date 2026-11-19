@@ -33,9 +33,9 @@ Each file contains 4,096 trajectories, stored as `loss[pool, arm, local_pull]` w
 
 All objectives have the one-neuron form
 
-\[
+$$
 L(a,b)=\mathbb{E}\big[(f(X)-a\,g(bX))^2\big],\qquad X\sim N(0,1).
-\]
+$$
 
 The quadratic cases use `f = g = 1 + x + x²`. The plateau cases use spong's `normal-symmetric-small-integer-d9`. Each [JSON sidecar](corpus) records the exact polynomial coefficients, initialization law, optimizer settings, generation seed, targets, and source commit.
 
